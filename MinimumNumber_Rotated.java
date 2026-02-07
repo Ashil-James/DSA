@@ -1,7 +1,7 @@
 package DSA;
 import java.util.*;
 
-public class MinimumProduct {
+public class MinimumNumber_Rotated {
 
     public static int minProduct(int[] nums){
         int low = 0;
