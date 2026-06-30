@@ -107,6 +107,7 @@ public class SinglyLinkedList {
         return head;
     }
 
+    //Display the linkedList
     public static void display(Node head){
         if(head == null){
             System.out.println("List is empty");
