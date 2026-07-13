@@ -25,6 +25,26 @@ class Graphs_AdjEdge {
         return matrix[source][destination] == 1;
     }
 
+    public void dfs(){
+        boolean visited[] = new boolean[vertices];
+
+        for(int i=0; i<vertices; i++) {
+            if(!visited[i]){
+                dfsHelper(i, visited);
+            }
+        }
+    }
+
+    private void dfsHelper(int node, boolean[] visited) {
+        visited[node] = true;
+
+        for(int neighbor=0; neighbor<vertices; neighbor++) {
+            if(matrix[node][neighbor] == 1 && !visited[neighbor]) {
+                dfsHelper(neighbor, visited);
+            }
+        }
+    }
+
     public void printGraph() {
         for (int i = 0; i < vertices; i++) {
             for (int j = 0; j < vertices; j++) {
@@ -38,16 +58,19 @@ class Graphs_AdjEdge {
 public class Graphs {
     public static void main(String[] args) {
 
-        Graphs_AdjEdge g = new Graphs_AdjEdge(5);
+        Graphs_AdjEdge g = new Graphs_AdjEdge(6);
+Graph graph = new Graph(6);
 
-        g.addEdge(0, 1);
-        g.addEdge(0, 2);
-        g.addEdge(1, 3);
-        g.addEdge(3, 4);
+        graph.addEdge(0,1);
+        graph.addEdge(0,2);
+        graph.addEdge(1,3);
+        graph.addEdge(1,4);
+        graph.addEdge(4,5);
 
-        g.printGraph();
+        graph.printGraph();
 
-        System.out.println(g.hasEdge(0,1));
-        System.out.println(g.hasEdge(2,4));
+        System.out.println("\nDFS:");
+
+        graph.dfs();
     }
 }
