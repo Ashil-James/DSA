@@ -1,4 +1,4 @@
-package DSA;
+package DSA.Graphs;
 
 import java.util.*;
 class Graph {

@@ -1,4 +1,4 @@
-package DSA;
+package DSA.Array;
 import java.util.*;
 public class ContainsDuplicate {
     public static boolean containsDuplicate(int[] nums) {

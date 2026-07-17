@@ -1,4 +1,4 @@
-package DSA;
+package DSA.DP;
 import java.util.*;
 public class BuySellStocks_I {
     public static void main(String[] args) {

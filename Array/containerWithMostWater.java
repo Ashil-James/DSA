@@ -1,4 +1,4 @@
-package DSA;
+package DSA.Array;
 
 class containerWithMostWater {
     public int maxArea(int[] height) {

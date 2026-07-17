@@ -1,4 +1,4 @@
-package DSA;
+package DSA.BinarySearch;
 import java.util.*;
 
 public class SearchRoatatedArray {

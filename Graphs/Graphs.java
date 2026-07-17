@@ -1,4 +1,4 @@
-package DSA;
+package DSA.Graphs;
 import java.util.*;
 class Graphs_AdjEdge {
 
@@ -37,7 +37,7 @@ class Graphs_AdjEdge {
 
     private void dfsHelper(int node, boolean[] visited) {
         visited[node] = true;
-
+        System.out.print(node + " ");
         for(int neighbor=0; neighbor<vertices; neighbor++) {
             if(matrix[node][neighbor] == 1 && !visited[neighbor]) {
                 dfsHelper(neighbor, visited);
@@ -58,8 +58,7 @@ class Graphs_AdjEdge {
 public class Graphs {
     public static void main(String[] args) {
 
-        Graphs_AdjEdge g = new Graphs_AdjEdge(6);
-Graph graph = new Graph(6);
+        Graphs_AdjEdge graph = new Graphs_AdjEdge(6);
 
         graph.addEdge(0,1);
         graph.addEdge(0,2);

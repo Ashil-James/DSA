@@ -1,4 +1,4 @@
-package DSA;
+package DSA.DP;
 import java.util.*;
 class countBits {
     public int[] countBits(int n) {

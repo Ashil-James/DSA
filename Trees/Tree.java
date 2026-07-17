@@ -1,4 +1,4 @@
-package DSA;
+package DSA.Trees;
 
 import java.util.*;
 public class Tree {

@@ -1,4 +1,4 @@
-package DSA;
+package DSA.Array;
 import java.util.*;
 class NumberofOneBits {
     public int hammingWeight(int n) {

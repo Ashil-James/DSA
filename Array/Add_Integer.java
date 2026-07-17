@@ -1,4 +1,4 @@
-package DSA;
+package DSA.Array;
 import java.util.*;
 class Add_Integer {
     public int getSum(int a, int b) {

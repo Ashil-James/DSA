@@ -1,4 +1,4 @@
-package DSA;
+package DSA.BitManipulation;
 import java.util.*;
 class reverseBits {
     public int reverseBits(int n) {
