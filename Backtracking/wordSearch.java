@@ -35,7 +35,7 @@ public class wordSearch {
         dfs(row-1, col, board, word, index+1) ||
         dfs(row+1, col, board, word, index+1) ||
         dfs(row, col-1, board, word, index+1) ||
-        dfs(row, col+1, board, word, index);
+        dfs(row, col+1, board, word, index+1);
 
         board[row][col] = temp;
 
